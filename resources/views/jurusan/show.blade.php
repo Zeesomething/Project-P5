@@ -23,6 +23,10 @@
                                                 value="{{ $jurusan->nama_jurusan }}" disabled>
                                         </div>
                                         <div class="mb-3">
+                                            <label class="form-label">Sampul</label><br>
+                                            <img src="{{ asset('images/jurusan/' . $jurusan->sampul) }}" width="100" class="mb-3">
+                                        </div>
+                                        <div class="mb-3">
                                             <a href="{{ url('admin/jurusan') }}" class="btn btn-danger">Kembali</a>
                                         </div>
                                     </form>

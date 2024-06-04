@@ -5,7 +5,7 @@
              <script>
                  document.write(new Date().getFullYear());
              </script>
-             Copyright Zidni Ngilmanavia
+             Copyright Kelompok 3
          </div>
          <div class="d-none d-lg-inline-block">
              <a href="https://www.instagram.com/smkassalaam/"><i class="bx bxl-instagram footer-link me-4"

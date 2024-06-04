@@ -33,25 +33,23 @@
     <ul class="menu-inner py-1">
         <!-- Dashboards -->
         <li class="menu-item active ">
-            <a href="{{ route('welcome') }}" class="menu-link">
+            <a href="{{ route('landing') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Dashboards">Beranda</div>
             </a>
         </li>
+        <li class="menu-item open mt-1">
+            <a href="{{ route('welcome') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Dashboards">Tentang Kami</div>
+            </a>
+        </li>
 
-        @auth
-            <li class="menu-item open">
-                <a href="{{ route('home') }}" class="menu-link">
-                    <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                    <div data-i18n="Dashboards">Dashboard</div>
-                </a>
-            @else
-            </li>
-        @endauth
+        
 
 
         {{-- Second Sidebar --}}
-        <li class="menu-item open mt">
+        <li class="menu-item open mt-1">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
                 <div data-i18n="Layouts">Profil</div>
@@ -80,6 +78,16 @@
                 </li>
             </ul>
         </li>
+
+        @auth
+            <li class="menu-item open mt-1">
+                <a href="{{ route('home') }}" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                    <div data-i18n="Dashboards">Dashboard</div>
+                </a>
+            @else
+            </li>
+        @endauth
 
 
 </aside>

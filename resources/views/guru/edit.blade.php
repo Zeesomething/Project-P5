@@ -34,7 +34,7 @@
                                                 @foreach ($mapel as $data)
                                                     <option value="{{ $data->id }}"
                                                         {{ $data->id == $guru->id_mapel ? 'selected' : '' }}>
-                                                        {{ $data->nama_mapel }}</option>
+                                                        {{ $data->nama }}</option>
                                                 @endforeach
                                             </select>
                                         </div>

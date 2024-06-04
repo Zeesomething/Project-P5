@@ -60,7 +60,7 @@
                                     alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $data->judul }}</h5>
-                                    <p class="card-text">{{$data->isi}}</p>
+                                    <p class="card-text">{{ $data->isi }}</p>
                                     <a href="{{ route('beranda.show', $data->id) }}" class="btn btn-primary">Lihat
                                         Selengkapnya</a>
                                 </div>
@@ -85,15 +85,15 @@
 
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
-        <div class="div">
-              <div class="container-xxl flex-grow-1 container-p-y mt-n5">
-                <div class="container justify-content-between">
+            <div class="div">
+                <div class="container-xxl flex-grow-1 container-p-y mt-n5">
+                    <div class="container justify-content-between">
                         <div class="row text-black mt-5">
-                            <h3 class="kami">Visi & Misi</h3>
+                            <h3 class="text-center">Visi & Misi</h3>
                             <div class="col">
-                                <p class="p">Visi</p>
+                                <p class="">Visi</p>
                                 <p> Menjadikan SMK Assalaam sebagai sekolah IDAMAN</p>
                             </div>
                             <div class="col">

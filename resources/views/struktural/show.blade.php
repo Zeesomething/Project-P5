@@ -13,14 +13,18 @@
                                     <form action="{{ route('struktural.store') }}" method="POST">
                                         @csrf
                                         <div class="mb-3">
-                                            <label class="form-label">ID Guru</label>
+                                            <label class="form-label">Nama Guru</label>
                                             <input type="text" class="form-control" name="id_guru"
-                                                value="{{ $struktural->id_guru }}" disabled>
+                                                value="{{ $struktural->guru->nama_guru }}" disabled>
                                         </div>
                                         <div class="mb-3">
-                                            <label class="form-label">ID Jabatan</label>
+                                            <label class="form-label">Jabatan</label>
                                             <input type="text" class="form-control" name="id_jabatan"
-                                                value="{{ $struktural->id_jabatan }}" disabled>
+                                                value="{{ $struktural->jabatan->nama }}" disabled>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Sampul</label><br>
+                                            <img src="{{ asset('images/struktural/' . $struktural->sampul) }}" width="100" class="mb-3">
                                         </div>
                                         <div class="mb-3">
                                         <a href="{{ url('admin/struktural') }}" class="btn btn-danger">Kembali</a>

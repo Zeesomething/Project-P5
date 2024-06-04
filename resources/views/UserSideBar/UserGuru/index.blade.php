@@ -32,6 +32,7 @@
                 </div>
             </div>
         </div>
+        <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row justify-content-center">
             @foreach ($guru as $data)
                     <div class="col-4 mt-5 ">
@@ -49,6 +50,7 @@
                 @endforeach
                 </div>
         </div>
+    </div>
     <!-- Akhir Home -->
 
     <!-- awal footer -->

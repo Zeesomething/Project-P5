@@ -71,8 +71,8 @@ class StrukturalController extends Controller
      */
     public function show($id)
     {
-        $artikel = Artikel::findOrFail($id);
-        return view('artikels.show', compact('artikel'));
+        $struktural = Struktural::findOrFail($id);
+        return view('struktural.show', compact('struktural'));
     }
 
     /**
@@ -99,7 +99,7 @@ class StrukturalController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $struktural = new Struktural;
+        $struktural = Struktural::findOrFail($id);
         $struktural->id_guru = $request->id_guru;
         $struktural->id_jabatan = $request->id_jabatan;
 

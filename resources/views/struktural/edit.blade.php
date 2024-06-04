@@ -29,7 +29,7 @@
                                                 @foreach ($jabatan as $data)
                                                     <option value="{{ $data->id }}"
                                                         {{ $data->id == $struktural->id_jabatan ? 'selected' : '' }}>
-                                                        {{ $data->nama_jabatan }}</option>
+                                                        {{ $data->nama }}</option>
                                                 @endforeach
                                             </select>
                                         </div>

@@ -8,10 +8,9 @@ use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\MapelController;
 use App\Http\Controllers\StrukturalController;
-
-use App\Http\Controllers\User\UserJurusanController;
-use App\Http\Controllers\User\UserGuruController;
 use App\Http\Controllers\User\UserEskulController;
+use App\Http\Controllers\User\UserGuruController;
+use App\Http\Controllers\User\UserJurusanController;
 use App\Http\Controllers\User\UserStrukturalController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+Route::get('/', [App\Http\Controllers\UserLandingController::class, 'index'])->name('landing');
 Route::get('/artikel/{id}', [BerandaController::class, 'show'])->name('beranda.show');
 
 // Guru
@@ -41,11 +40,13 @@ Route::get('/eskul', [UserEskulController::class, 'index'])->name('eskul');
 // Jurusan
 Route::get('/jurusan', [UserJurusanController::class, 'index'])->name('jurusan');
 
+Route::get('/welcome', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/welcome', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
+
+Route::get('/landing', [App\Http\Controllers\UserLandingController::class, 'index'])->name('landing');
 
 Route::group(['prefix' => 'admin'], function () {
 // CRUD Jabatan

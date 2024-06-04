@@ -15,8 +15,8 @@
                                         @method('PUT')
                                         <div class="mb-3">
                                             <label class="form-label">Nama jabatan</label>
-                                            <input type="text" class="form-control" name="nama_jabatan"
-                                                value="{{ $jabatan->nama_jabatan }}">
+                                            <input type="text" class="form-control" name="nama"
+                                                value="{{ $jabatan->nama }}">
                                         </div>
                                         <div class="mb-3">
                                             <button type="submit" class="btn btn-primary">Ubah</button>

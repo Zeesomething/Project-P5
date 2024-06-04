@@ -42,6 +42,7 @@
         {{-- ROW 1 --}}
         {{-- /ROW 1 --}}
         {{-- ROW 2 --}}
+        <div class="container-xxl flex-grow-1 container-p-y">
         <div class="row justify-content-center">
             @foreach ($eskul as $data)
                 <div class="col-4 mt-n4 ">
@@ -57,6 +58,7 @@
             {{-- /ROW 2 --}}
         </div>
 
+    </div>
     </div>
     <br>
     <!-- Akhir Home -->

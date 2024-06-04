@@ -2,16 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artikel;
-
-class WelcomeController extends Controller
+class UserLandingController extends Controller
 {
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    
+   
 
     /**
      * Show the application dashboard.
@@ -20,7 +18,6 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::all();
-        return view('welcome', compact('artikel'));
+        return view('userlanding');
     }
 }

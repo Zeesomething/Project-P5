@@ -28,9 +28,13 @@
                                                 value="{{ $guru->email }}" disabled>
                                         </div>
                                         <div class="div">
-                                            <label class="form-label">ID Mapel</label>
+                                            <label class="form-label">Mapel</label>
                                             <input type="text" class="form-control" name="id_mapel"
-                                                value="{{ $guru->id_mapel }}" disabled>
+                                                value="{{ $guru->mapel->nama }}" disabled>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Sampul</label><br>
+                                            <img src="{{ asset('images/guru/' . $guru->sampul) }}" width="100" class="mb-3">
                                         </div>
                                         <div class="mb-3">
                                             <a href="{{ url('admin/guru') }}" class="btn btn-danger">Kembali</a>

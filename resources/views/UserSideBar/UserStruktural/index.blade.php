@@ -9,7 +9,7 @@
 
     {{-- /ROW 1 --}}
     {{-- ROW 2 --}}
-    <div class="section">
+    
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row mt-n4">
@@ -34,12 +34,14 @@
                 </div>
             </div>
         </div>
+        <div class="section">
+            <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row justify-content-center">
                 @foreach ($struktural as $data)
                     <div class="col-4 mt-n4 ">
                         <div class="card" id="eskul"  >
                             <img src="{{ asset('images/struktural/' .$data->sampul) }}"
-                                class="card-img-top" alt="...">
+                                class="card-img-top" alt="..." width="80%">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $data->guru->nama_guru }}</h5>
                                 <p class="card-text">{{ $data->jabatan->nama }}</p>
@@ -50,6 +52,7 @@
                 {{-- /ROW 2 --}}
             </div>
         </div>
+        </div>  
     <br>
     <!-- Akhir Home -->
 

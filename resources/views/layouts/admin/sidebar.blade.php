@@ -38,19 +38,15 @@
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Dashboards">Dashboards</div>
             </a>
-            <li class="menu-item open">
-            <a href="{{route('welcome')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Dashboards">Home</div>
-            </a>
+            
         
     
 
         {{-- Second Sidebar --}}
         <li class="menu-item open">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="javascript:void(0);" class="menu-link  mt-2">
                 <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">Layouts</div>
+                <div data-i18n="Layouts">Tables</div>
               </a>
 
               <ul class="menu-sub">
@@ -91,6 +87,10 @@
                 </li>
             </ul>
             </li>
-
+<li class="menu-item open">
+            <a href="{{route('landing')}}" class="menu-link mt-2">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Dashboards">Home</div>
+            </a>
 
 </aside>

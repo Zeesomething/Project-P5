@@ -24,7 +24,10 @@
                                                 JURUSAN SMK ASSALAM BANDUNG
                                             </h3>
                                             <p class="mb-4">
-                                                SMK ASSALAAM Memiliki 3 Jurusan yaitu RPL(Rekayasa Perankat Lunak), TBSM(Teknik Bisnis Sepeda Motor) dan TKRO(Teknik Kendaraan Ringan Otomatif)
+                                                SMK ASSALAAM Memiliki 3 Jurusan yaitu 
+                                                <li>RPL(Rekayasa Perankat Lunak)</li>
+                                                <li>TBSM(Teknik Bisnis Sepeda Motor)</li>
+                                                <li>TKRO(Teknik Kendaraan Ringan Otomatif)</li>
                                             </p>
                                         </div>
                                         <div class="app-academy-md-25 d-flex align-items-end justify-content-end">
@@ -37,12 +40,13 @@
                 </div>
             </div>
         </div>
+        <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row justify-content-center">
                 @foreach ($jurusan as $data)
-                    <div class="col-4 mt-n4 ">
+                    <div class="col md-2">
                         <div class="card" id="eskul"  >
                             <img src="{{ asset('images/jurusan/' .$data->sampul) }}"
-                                class="card-img-top" alt="...">
+                                class="card-img-top" alt="..." width="80%">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $data->nama_jurusan }}</h5>
                                 <p class="card-text">Kaprog : {{ $data->kaprog }}</p>
@@ -53,6 +57,7 @@
                 {{-- /ROW 2 --}}
             </div>
         </div>
+    </div>
     <br>
     <!-- Akhir Home -->
 
